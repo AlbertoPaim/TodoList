@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+
+--background-color: rgb(26, 138, 146);
+--color1: white;
+--color2: rgb(196, 169, 52);
+
+}
+
+
+
+body{
+    background: linear-gradient(to bottom, var(--background-color), black);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    margin-top: 2rem;
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: var(--color2);
+    text-shadow: 0px 0px 5px var(--color2);
+}
+
+.searcharea{
+    margin-top: 2.5rem;
+    background-color: var(--color1);
+    padding:  0.5rem 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searcharea input{
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-right: 1rem;
+    width: fit-content;
+    
+}
+
+.searcharea i{
+    color: gray;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1.8rem;
+    
+}
+
+.searcharea i:hover{
+
+    color: var(--background-color);
+    transition: 0.5s;
+}
+.tasks{
+    margin-top: 2.5rem;
+    margin: auto;
+    justify-content: center;
+
+    margin: 10px;
+}
+
+.task{
+background-color: var(--color1);
+border-radius: 10px;
+padding: 0.2rem 1rem;
+margin: 1rem 0px;
+
+
+}
+.task ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.task li{
+    color: var(--background-color);
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+
+.task i{
+    color: gray;
+    font-size: 20px;
+    margin: 0px 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.task i:hover{
+    color: var(--background-color);
+    transition: 0.5s;
+}
+footer{
+    position: fixed;
+    top: 95%;
+}
+footer a{
+    color: var(--color2);
+    font-size: 1.2rem;
+    
+}
